@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__burger-wrapper">
-                        <div class="header__burger">
+                        <div class="header__burger" data-burger>
                             <div class="header__burger-item"></div>
                         </div>
                     </div>
@@ -42,6 +42,53 @@
                 </div>
             </div>
         </header>
+        <div class="menu" data-burger-menu>
+            <div class="container">
+                <div class="menu__wrapper">
+                    <div class="menu__body">
+                        <nav class="menu__nav">
+                            <div class="menu__list">
+                                <li class="menu__item"><a href="">Landing page</a></li>
+                                <li class="menu__item"><a href="">Corporate website</a></li>
+                                <li class="menu__item"><a href="">Online store</a></li>
+                                <li class="menu__item"><a href="">About Us</a></li>
+                                <li class="menu__item"><a href="#contacts">Contacts</a></li>
+                            </div>
+                            <div class="menu__list --mini">
+                                <li class="menu__item"><a href="">Internet marketing</a></li>
+                                <li class="menu__item"><a href="">Research business</a></li>
+                                <li class="menu__item"><a href="">Marketing</a></li>
+                                <li class="menu__item"><a href="">Advertising</a></li>
+                            </div>
+                        </nav>
+                        <div class="menu__img">
+                            <img src="assets/img/menu-hero..svg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu__footer">
+                        <div class="menu__footer-wrap">
+                            <span class="menu__footer-item">
+                                <span>Call:</span><a href="" class=""> 540-466-4276</a>
+                            </span>
+                            <span class="menu__footer-item">
+                                <span>Email:</span><a href="" class="--orange">sales@digitalminerva.com</a>
+                            </span>
+                        </div>
+                        <ul class="header__socials">
+                            <li class="header__social"><a href=""><svg>
+                                        <use xlink:href="assets/img/sprite..svg#twitter"></use>
+                                    </svg></a></li>
+                            <li class="header__social"><a href=""><svg>
+                                        <use xlink:href="assets/img/sprite..svg#insta"></use>
+                                    </svg></a></li>
+                            <li class="header__social"><a href=""><svg>
+                                        <use xlink:href="assets/img/sprite..svg#facebook"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <main class="main index-page">
             <section class="title">
@@ -827,7 +874,8 @@
                                                     <div class="col-12"><span class="wpcf7-form-control-wrap" data-name="your-website"><input type="text" name="your-website" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Website"></span></div>
                                                     <div class="col-12"><span class="wpcf7-form-control-wrap" data-name="your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="How can we help?"></span></div>
                                                     <div class="col-12">
-                                                        <div class="acceptance"><span class="wpcf7-form-control-wrap" data-name="acceptance-40"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance-40" value="1" aria-invalid="false" checked="checked"></span></span></span>I agree to the processing of  <a href="/privacy-policy/" target="_blank">personal data</a></div>
+                                                        <div class="acceptance"><span class="wpcf7-form-control-wrap" data-name="acceptance-40"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance-40" value="1" aria-invalid="false" checked="checked"></span></span></span>I
+                                                            agree to the processing of <a href="/privacy-policy/" target="_blank">personal data</a></div>
                                                     </div>
                                                     <div class="col-12"><input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit btn transparent"><span class="wpcf7-spinner"></span></div>
                                                 </div>
@@ -851,7 +899,8 @@
                                                 <div class="col-12"><span class="wpcf7-form-control-wrap" data-name="your-website"><input type="text" name="your-website" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Website"></span></div>
                                                 <div class="col-12"><span class="wpcf7-form-control-wrap" data-name="your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="How can we help?"></span></div>
                                                 <div class="col-12">
-                                                    <div class="acceptance"><span class="wpcf7-form-control-wrap" data-name="acceptance-40"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance-40" value="1" aria-invalid="false" checked="checked"></span></span></span>I agree to the processing of  <a href="/privacy-policy/" target="_blank">personal data</a></div>
+                                                    <div class="acceptance"><span class="wpcf7-form-control-wrap" data-name="acceptance-40"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance-40" value="1" aria-invalid="false" checked="checked"></span></span></span>I agree
+                                                        to the processing of <a href="/privacy-policy/" target="_blank">personal data</a></div>
                                                 </div>
                                                 <div class="col-12"><input type="submit" value="Отправить" class="wpcf7-form-control has-spinner wpcf7-submit btn transparent"><span class="wpcf7-spinner"></span></div>
                                             </div>
@@ -875,9 +924,10 @@
                                                 <div class="col-12"><span class="wpcf7-form-control-wrap" data-name="your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="How can we help?"></span></div>
                                                 <div class="col-12">
                                                     <div class="acceptance"><span class="wpcf7-form-control-wrap" data-name="acceptance-40"><span class="wpcf7-form-control wpcf7-acceptance optional"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance-40" value="1" aria-invalid="false"></span></span></span>
-                                                        I agree to the processing of 
+                                                        I agree to the processing of
 
-                                                        <a href="/privacy-policy/" target="_blank">personal data</a></div>
+                                                        <a href="/privacy-policy/" target="_blank">personal data</a>
+                                                    </div>
                                                 </div>
                                                 <div class="col-12"><input type="submit" value="Отправить" class="wpcf7-form-control has-spinner wpcf7-submit btn transparent"><span class="wpcf7-spinner"></span></div>
                                             </div>
@@ -935,6 +985,35 @@
                 </div>
             </div>
         </footer>
+
+        <!-- <div class="popup">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__headline">
+                        <h3 class="popup__header"></h3>
+                        <desc class="popup__desc"></desc>
+                    </div>
+                    <form action="" class="popup__form">
+                        <label class="popup__label">
+                            <span>Имя *</span>
+                            <input type="text" class="popup__field" placeholder="Как вас зовут?">
+                        </label>
+                        <label class="popup__label">
+                            <span>Номер телефона *</span>
+                            <input type="text" class="popup__field" placeholder="Введите номер телефона">
+                        </label>
+                        <label class="popup__label">
+                            <span>Ваша компания *</span>
+                            <input type="text" class="popup__field" placeholder="Чем занимается ваша компания">
+                        </label>
+                        <label class="popup__label">
+                            <span>Ссылка на макет в Figma *</span>
+                            <input type="text" class="popup__field" placeholder="Введите адрес ссылки">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div> -->
 
     </div>
 </body>
